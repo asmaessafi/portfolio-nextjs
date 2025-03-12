@@ -3,7 +3,7 @@
     padding: 0;
     overflow-x: hidden; /* Disables horizontal scrolling */
     font-family: "Poppins", sans-serif; /* Modern and clean font */
-    
+    background-color: #7777b6bf;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Roboto", sans-serif; /* Pairing with a professional font for headings */

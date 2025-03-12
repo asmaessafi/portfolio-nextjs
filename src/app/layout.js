@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500&display=swap"
           rel="stylesheet"
         /></head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ backgroundColor:' #7777b6bf'}}>
         <Header/>
         {children}
         <Footer/>
