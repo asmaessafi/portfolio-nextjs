@@ -1,0 +1,176 @@
+/* styles/Body.module.css */
+.bodyContainer {
+  background: #434367b0;
+  min-height: calc(100vh - 70px); 
+    padding: 40px 20px;
+    color: #333; 
+    font-family: "Poppins", sans-serif; 
+  }
+  /* body {  
+    background: #434367b0;
+  } */
+  
+  .contentWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; 
+  }
+  
+  .section {
+    background-color:  #1e1e2f;
+    border-radius: 6px; 
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease, transform 0.2s ease; 
+    transform: translateX(100%); /* Initially off the screen to the right */
+    animation: slide-in-right 1.5s ease-out forwards;
+  }
+
+  @keyframes slide-in-right {
+    to {
+      transform: translateX(0); /* Move into view */
+    }
+  }
+  
+  .section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-2px); 
+  }
+  
+  .title {
+    color: #f3f9fa;
+    font-size: 26px;
+    font-weight: 600; 
+    margin-bottom: 20px;
+  }
+  
+  .text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #c0dddf; /* Softer gray for body text */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .bodyContainer {
+      padding: 20px 10px;
+    }
+  
+    .section {
+      padding: 20px;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .text {
+      font-size: 14px;
+    }
+  }
+
+  /* styles/Hero.module.css */
+.hero {
+    background-color: #1e1e2f; /* White to match body sections */
+    padding: 60px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Matches header shadow */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%); /* Initially off the screen to the left */
+    animation: slide-in 1.5s ease-out forwards;}
+  
+
+  @keyframes slide-in {
+    to {
+      transform: translateX(0); /* Move into view */
+    }
+  }
+  
+  .heroWrapper {
+    max-width: 1200px; /* Matches header and body */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+  
+  .heroContent {
+    flex: 1;
+    color: #1a1a1a; /* Matches header background for text */
+  }
+  
+  .heroTitle {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif; 
+    color: #f2f6f7;
+    ;
+  }
+  
+  .heroSubtitle {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #c8dedf; /* Matches body text */
+    margin-bottom: 30px;
+  }
+  
+  .heroButton {
+    display: inline-block;
+    background-color: #00b4d8; /* Matches header hover color */
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Matches header transitions */
+  }
+  
+  .heroButton:hover {
+    background-color: #0077b6; /* Matches header active color */
+    transform: translateY(-2px); /* Matches header hover effect */
+  }
+  
+  .heroImage {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .profileImage {
+    border-radius: 50%; /* Circular image */
+    object-fit: cover; /* Ensures image fits nicely */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      padding: 40px 10px;
+    }
+  
+    .heroWrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .heroTitle {
+      font-size: 36px;
+    }
+  
+    .heroSubtitle {
+      font-size: 16px;
+    }
+  
+    .heroImage {
+      justify-content: center;
+    }
+  
+    .profileImage {
+      width: 300px;
+      height: 300px;
+    }
+  }

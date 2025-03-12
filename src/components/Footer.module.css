@@ -1,0 +1,45 @@
+/* components/Footer.module.css */
+  .footer {
+    background: #1e1e2f;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    bottom: 0; 
+    margin: 0 , auto;
+    overflow: hidden; 
+    width: auto;
+}
+
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .socialLinks {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+
+  }
+  
+  .copyright {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #cccccc; /* Slightly lighter gray for contrast */
+  }
+  
+  
+  .icon {
+    filter: invert(1); 
+    transition: transform 0.2s ease-in-out;
+ 
+  }
+  
+  .icon:hover {
+    transform: scale(1.1);
+  }
