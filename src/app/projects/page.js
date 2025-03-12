@@ -1,9 +1,9 @@
 import React from 'react'
 import styles from './projects.module.css'
-// import projects from '../../projectsTable/projects.js'
+import projects from '../../projectsTable/projects.js'
 import Image from 'next/image'
 
-const Page = ({projects}) => {
+const Page = () => {
 
   return (
       <div className={styles.projectsContainer}>
